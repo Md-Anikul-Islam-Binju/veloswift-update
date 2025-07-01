@@ -4,7 +4,6 @@
 
 <!-- Hero Section -->
 <section id="hero" class="hero section light-background">
-
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
@@ -32,7 +31,7 @@
                         </div>
                         <h4 class="title"><a href="" class="stretched-link">Software Development</a></h4>
                     </div>
-                </div><!--End Icon Box -->
+                </div>
 
                 <div class="col-xl-3 col-md-6">
                     <div class="icon-box">
@@ -41,7 +40,7 @@
                         </div>
                         <h4 class="title"><a href="" class="stretched-link">Web Application</a></h4>
                     </div>
-                </div><!--End Icon Box -->
+                </div>
 
                 <div class="col-xl-3 col-md-6">
                     <div class="icon-box">
@@ -50,7 +49,7 @@
                         </div>
                         <h4 class="title"><a href="" class="stretched-link">Mobile Application</a></h4>
                     </div>
-                </div><!--End Icon Box -->
+                </div>
 
                 <div class="col-xl-3 col-md-6">
                     <div class="icon-box">
@@ -59,21 +58,16 @@
                         </div>
                         <h4 class="title"><a href="" class="stretched-link">Cloud Solutions</a></h4>
                     </div>
-                </div><!--End Icon Box -->
-
+                </div>
             </div>
         </div>
     </div>
-
 </section>
 
 <!-- About Section -->
 <section id="about" class="about section">
-
     <div class="container">
-
         <div class="row gy-4">
-
             <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
                 <p class="who-we-are">Who We Are</p>
                 <h3>Unleashing Potential with Creative Strategy</h3>
@@ -105,27 +99,19 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
 </section>
 
 <!-- Product Section -->
 <section id="services" class="services section">
-
-    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Product</h2>
         <div><span>Check Our</span> <span class="description-title">Product</span></div>
-    </div><!-- End Section Title -->
-
+    </div>
     <div class="container">
-
         <div class="row gy-4">
-
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
                     <div class="icon">
@@ -200,26 +186,18 @@
                     <a href="service-details.html" class="stretched-link"></a>
                 </div>
             </div><!-- End Service Item -->
-
         </div>
-
     </div>
-
 </section>
 
 <!-- Client Section -->
 <section id="features" class="features section light-background">
-
-    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Client</h2>
         <div><span>Check Our</span> <span class="description-title">Client</span></div>
-    </div><!-- End Section Title -->
-
+    </div>
     <div class="container">
-
         <div class="row gy-5 justify-content-between">
-
             <div class="col-xl-5" data-aos="zoom-out" data-aos-delay="100">
                 <img src="{{URL::to('frontend/assets/assets/img//template/eStartup/features.svg')}}" class="img-fluid" alt="">
             </div>
@@ -271,26 +249,18 @@
 
                 </div>
             </div>
-
         </div>
-
     </div>
-
 </section>
 
 <!-- Pricing Section -->
 <section id="pricing" class="pricing section">
-
-    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Pricing</h2>
         <div><span>Check Our</span> <span class="description-title">Pricing</span></div>
-    </div><!-- End Section Title -->
-
+    </div>
     <div class="container">
-
         <div class="row gy-4">
-
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                 <div class="pricing-tem">
                     <h3 style="color: #20c997;">Free Plan</h3>
@@ -363,26 +333,18 @@
                     <a href="#" class="btn-buy">Buy Now</a>
                 </div>
             </div><!-- End Pricing Item -->
-
         </div><!-- End pricing row -->
-
     </div>
-
 </section>
 
 <!-- Contact Section -->
 <section id="contact" class="contact section">
-
-    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
         <div><span>Need Help?</span> <span class="description-title">Contact Us</span></div>
-    </div><!-- End Section Title -->
-
+    </div>
     <div class="container" data-aos="fade" data-aos-delay="100">
-
         <div class="row gy-4">
-
             <div class="col-lg-4">
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                     <i class="bi bi-geo-alt flex-shrink-0"></i>
@@ -391,7 +353,6 @@
                         <p>A108 Adam Street, New York, NY 535022</p>
                     </div>
                 </div><!-- End Info Item -->
-
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                     <i class="bi bi-telephone flex-shrink-0"></i>
                     <div>
@@ -407,7 +368,6 @@
                         <p>info@example.com</p>
                     </div>
                 </div><!-- End Info Item -->
-
             </div>
 
             <div class="col-lg-8">
@@ -437,16 +397,11 @@
 
                             <button type="submit">Send Message</button>
                         </div>
-
                     </div>
                 </form>
             </div><!-- End Contact Form -->
-
         </div>
-
     </div>
-
 </section>
-
 
 @endsection

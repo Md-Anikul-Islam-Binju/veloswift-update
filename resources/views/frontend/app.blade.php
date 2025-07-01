@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -10,7 +9,6 @@
     <!-- Favicons -->
     <link href="{{asset('frontend/assets/img/favicon.png')}}" rel="icon">
     <link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
-
     <!-- Vendor CSS Files -->
     <link href="{{asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
@@ -21,14 +19,11 @@
 </head>
 
 <body class="index-page">
-
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="/" class="logo d-flex align-items-center">
             <h1 class="sitename"><span>Velo</span>Swift</h1>
         </a>
-
         <nav id="navmenu" class="navmenu">
             <ul>
                 <li><a href="#hero" class="active">Home</a></li>
@@ -62,16 +57,13 @@
 </header>
 
 <main class="main">
-
     @yield('home_content')
-
 </main>
 
 <footer id="footer" class="footer light-background">
-
     <div class="container">
         <div class="copyright text-center ">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">eStartup</strong> <span>All Rights Reserved</span></p>
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Veloswift</strong> <span>All Rights Reserved</span></p>
         </div>
         <div class="social-links d-flex justify-content-center">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -79,32 +71,16 @@
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
         </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you've purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-        </div>
     </div>
-
 </footer>
-
 <!-- Scroll Top -->
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<!-- Preloader -->
-<div id="preloader"></div>
-
 <!-- Vendor JS Files -->
 <script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('frontend/assets/vendor/php-email-form/validate.js')}}"></script>
 <script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
 <script src="{{asset('frontend/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-
 <!-- Main JS File -->
 <script src="{{asset('frontend/assets/js/main.js')}}"></script>
-
 </body>
-
 </html>
