@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\Project;
 use App\Models\Service;
 use App\Models\SiteSetting;
 use App\Models\Slider;
@@ -18,6 +19,8 @@ class HomeController extends Controller
         $client = Client::where('status',1)->get();
         $service = Service::where('status',1)->get();
         $team = Team::where('status',1)->get();
-        return view('frontend.index',compact('technology','client','service','team'));
+        $project = Project::where('status',1)->get();
+        $slider = Slider::where('status',1)->first();
+        return view('frontend.index',compact('technology','client','service','team','project','slider'));
     }
 }

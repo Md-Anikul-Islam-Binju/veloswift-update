@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\admin\ClientController;
 use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\ProjectController;
 use App\Http\Controllers\admin\ServiceController;
 use App\Http\Controllers\admin\SiteSettingController;
 use App\Http\Controllers\admin\SliderController;
@@ -64,6 +65,12 @@ Route::middleware('auth')->group(callback: function () {
     Route::post('/team-store', [TeamController::class, 'store'])->name('team.store');
     Route::put('/team-update/{id}', [TeamController::class, 'update'])->name('team.update');
     Route::get('/team-delete/{id}', [TeamController::class, 'destroy'])->name('team.destroy');
+
+    //Project Section
+    Route::get('/project-section', [ProjectController::class, 'index'])->name('project.section');
+    Route::post('/project-store', [ProjectController::class, 'store'])->name('project.store');
+    Route::put('/project-update/{id}', [ProjectController::class, 'update'])->name('project.update');
+    Route::get('/project-delete/{id}', [ProjectController::class, 'destroy'])->name('project.destroy');
 
     //Site Setting
     Route::get('/site-setting', [SiteSettingController::class, 'index'])->name('site.setting');

@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
-                <img src="{{URL::to('frontend/assets/img/hero-img.png')}}" class="img-fluid" alt="">
+                <img src="{{asset('images/slider/'. $slider->image )}}" class="img-fluid" alt="">
             </div>
         </div>
     </div>
@@ -70,15 +70,14 @@
         <div class="row gy-4">
             <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
                 <p class="who-we-are">Who We Are</p>
-                <h3>Unleashing Potential with Creative Strategy</h3>
+                <h3>Delivering Agile IT Solutions, VeloSwift Your Success</h3>
                 <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    At VeloSwifte, we specialize in delivering innovative IT solutions that drive digital transformation. From web and mobile app development to custom websites and game creation, we combine technical expertise with a client-focused approach to bring your vision to life. Our agile processes and commitment to quality ensure fast, reliable results every time.
                 </p>
                 <ul>
-                    <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                    <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                    <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>We focus on bringing your vision to life with custom, cutting-edge solutions..</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Our streamlined processes ensure fast, reliable delivery without compromising quality.</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>We specialize in web, mobile app, and game development tailored to your needs.</span></li>
                 </ul>
                 <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
@@ -112,80 +111,19 @@
     </div>
     <div class="container">
         <div class="row gy-4">
+            @foreach($project as $projectData)
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
-                    <div class="icon">
-                        <i class="bi bi-activity"></i>
-                    </div>
-                    <a href="service-details.html" class="stretched-link">
-                        <h3>Nesciunt Mete</h3>
-                    </a>
-                    <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                </div>
-            </div><!-- End Service Item -->
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item position-relative">
-                    <div class="icon">
-                        <i class="bi bi-broadcast"></i>
-                    </div>
-                    <a href="service-details.html" class="stretched-link">
-                        <h3>Eosle Commodi</h3>
-                    </a>
-                    <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                </div>
-            </div><!-- End Service Item -->
+                        <img src="{{asset('images/project/'. $projectData->image )}}" alt="Current Image" style="max-width: 350px;">
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-item position-relative">
-                    <div class="icon">
-                        <i class="bi bi-easel"></i>
-                    </div>
                     <a href="service-details.html" class="stretched-link">
-                        <h3>Ledo Markt</h3>
+                        <h3>{{$projectData->title}}</h3>
                     </a>
-                    <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                    <p>{{ strip_tags($projectData->details) }}</p>
                 </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-item position-relative">
-                    <div class="icon">
-                        <i class="bi bi-bounding-box-circles"></i>
-                    </div>
-                    <a href="service-details.html" class="stretched-link">
-                        <h3>Asperiores Commodit</h3>
-                    </a>
-                    <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                    <a href="service-details.html" class="stretched-link"></a>
-                </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="service-item position-relative">
-                    <div class="icon">
-                        <i class="bi bi-calendar4-week"></i>
-                    </div>
-                    <a href="service-details.html" class="stretched-link">
-                        <h3>Velit Doloremque</h3>
-                    </a>
-                    <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                    <a href="service-details.html" class="stretched-link"></a>
-                </div>
-            </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                <div class="service-item position-relative">
-                    <div class="icon">
-                        <i class="bi bi-chat-square-text"></i>
-                    </div>
-                    <a href="service-details.html" class="stretched-link">
-                        <h3>Dolori Architecto</h3>
-                    </a>
-                    <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                    <a href="service-details.html" class="stretched-link"></a>
-                </div>
-            </div><!-- End Service Item -->
+            </div>
+            @endforeach
         </div>
     </div>
 </section>
@@ -204,48 +142,14 @@
 
             <div class="col-xl-6 d-flex">
                 <div class="row align-self-center gy-4">
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Eos aspernatur rem</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Facilis neque ipsa</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Volup amet volupt</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Rerum omnis sint</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Alias possimus</h3>
-                        </div>
-                    </div><!-- End Feature Item -->
-
+                    @foreach($client as $clientData)
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
-                        <div class="feature-box d-flex align-items-center">
-                            <i class="bi bi-check"></i>
-                            <h3>Repellendus molli</h3>
+                        <div class="feature-box d-flex align-items-center ">
+                            <img class="me-3" src="{{asset('images/client/'. $clientData->logo )}}" style="height: 80px; width: 80px;" alt="">
+                            <h3>{{$clientData->name}}</h3>
                         </div>
-                    </div><!-- End Feature Item -->
+                    </div>
+                    @endforeach
 
                 </div>
             </div>
@@ -263,17 +167,17 @@
         <div class="row gy-4">
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                 <div class="pricing-tem">
-                    <h3 style="color: #20c997;">Free Plan</h3>
-                    <div class="price"><sup>$</sup>0<span> / mo</span></div>
+                    <h3 style="color: #20c997;">Basic Plan</h3>
+                    <div class="price"><sup>$</sup>50<span> / mo</span></div>
                     <div class="icon">
                         <i class="bi bi-box" style="color: #20c997;"></i>
                     </div>
                     <ul>
-                        <li>Aida dere</li>
-                        <li>Nec feugiat nisl</li>
-                        <li>Nulla at volutpat dola</li>
-                        <li class="na">Pharetra massa</li>
-                        <li class="na">Massa ultricies mi</li>
+                        <li>Project Manage</li>
+                        <li>Database Support</li>
+                        <li>Server Management</li>
+                        <li class="na">Code Script</li>
+                        <li class="na">Unlimited POS</li>
                     </ul>
                     <a href="#" class="btn-buy">Buy Now</a>
                 </div>
@@ -283,16 +187,16 @@
                 <div class="pricing-tem">
                     <span class="featured">Featured</span>
                     <h3 style="color: #0dcaf0;">Starter Plan</h3>
-                    <div class="price"><sup>$</sup>19<span> / mo</span></div>
+                    <div class="price"><sup>$</sup>20<span> / mo</span></div>
                     <div class="icon">
                         <i class="bi bi-send" style="color: #0dcaf0;"></i>
                     </div>
                     <ul>
-                        <li>Aida dere</li>
-                        <li>Nec feugiat nisl</li>
-                        <li>Nulla at volutpat dola</li>
-                        <li>Pharetra massa</li>
-                        <li class="na">Massa ultricies mi</li>
+                        <li>Project Manage</li>
+                        <li>Database Support</li>
+                        <li class="na">Server Management</li>
+                        <li class="na">Code Script</li>
+                        <li class="na">Unlimited POS</li>
                     </ul>
                     <a href="#" class="btn-buy">Buy Now</a>
                 </div>
@@ -301,16 +205,17 @@
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                 <div class="pricing-tem">
                     <h3 style="color: #fd7e14;">Business Plan</h3>
-                    <div class="price"><sup>$</sup>29<span> / mo</span></div>
+                    <div class="price"><sup>$</sup>100<span> / mo</span></div>
                     <div class="icon">
                         <i class="bi bi-airplane" style="color: #fd7e14;"></i>
                     </div>
                     <ul>
-                        <li>Aida dere</li>
-                        <li>Nec feugiat nisl</li>
-                        <li>Nulla at volutpat dola</li>
-                        <li>Pharetra massa</li>
-                        <li>Massa ultricies mi</li>
+                        <li>Project Manage</li>
+                        <li>Database Support</li>
+                        <li>Server Management</li>
+                        <li>Code Script</li>
+                        <li class="na">Unlimited POS</li>
+                        <li class="na">Unlimited SAAS</li>
                     </ul>
                     <a href="#" class="btn-buy">Buy Now</a>
                 </div>
@@ -319,16 +224,17 @@
             <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
                 <div class="pricing-tem">
                     <h3 style="color: #0d6efd;">Ultimate Plan</h3>
-                    <div class="price"><sup>$</sup>49<span> / mo</span></div>
+                    <div class="price"><sup>$</sup>250<span> / mo</span></div>
                     <div class="icon">
                         <i class="bi bi-rocket" style="color: #0d6efd;"></i>
                     </div>
                     <ul>
-                        <li>Aida dere</li>
-                        <li>Nec feugiat nisl</li>
-                        <li>Nulla at volutpat dola</li>
-                        <li>Pharetra massa</li>
-                        <li>Massa ultricies mi</li>
+                        <li>Project Manage</li>
+                        <li>Database Support</li>
+                        <li>Server Management</li>
+                        <li>Code Script</li>
+                        <li>Unlimited POS</li>
+                        <li>Unlimited SAAS</li>
                     </ul>
                     <a href="#" class="btn-buy">Buy Now</a>
                 </div>
@@ -350,14 +256,14 @@
                     <i class="bi bi-geo-alt flex-shrink-0"></i>
                     <div>
                         <h3>Address</h3>
-                        <p>A108 Adam Street, New York, NY 535022</p>
+                        <p>Dhaka, Bangladesh</p>
                     </div>
                 </div><!-- End Info Item -->
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                     <i class="bi bi-telephone flex-shrink-0"></i>
                     <div>
                         <h3>Call Us</h3>
-                        <p>+1 5589 55488 55</p>
+                        <p>+8801905256528</p>
                     </div>
                 </div><!-- End Info Item -->
 
@@ -365,7 +271,7 @@
                     <i class="bi bi-envelope flex-shrink-0"></i>
                     <div>
                         <h3>Email Us</h3>
-                        <p>info@example.com</p>
+                        <p>info@veloswift.net/</p>
                     </div>
                 </div><!-- End Info Item -->
             </div>

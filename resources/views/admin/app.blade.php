@@ -124,6 +124,13 @@
                 </li>
 
                 <li class="side-nav-item">
+                    <a href="{{route('project.section')}}" class="side-nav-link">
+                        <i class="ri-dashboard-3-line"></i>
+                        <span> Project </span>
+                    </a>
+                </li>
+
+                <li class="side-nav-item">
                     <a href="{{route('client.section')}}" class="side-nav-link">
                         <i class="ri-dashboard-3-line"></i>
                         <span> Client </span>
