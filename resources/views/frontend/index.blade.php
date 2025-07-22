@@ -2,20 +2,20 @@
 @section('home_content')
 
 
-<!-- Hero Section -->
+<!-- Slider Section -->
 <section id="hero" class="hero section light-background">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5">
             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h2>VeloSwift</h2>
-                <p>we take pride in delivering innovative and high-quality IT solutions. Our completed projects showcase our expertise in transforming complex challenges into seamless, efficient systems that drive business success..</p>
+                <h2>{{$slider->title}}</h2>
+                <p>{!! $slider->details !!}</p>
                 <div class="d-flex">
                     <a href="#about" class="btn-get-started">Get Started</a>
                     <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
-                <img src="{{asset('images/slider/'. $slider->image )}}" class="img-fluid" alt="">
+                <img src="{{asset('images/slider/'. $slider->image?? null )}}" class="img-fluid" alt="">
             </div>
         </div>
     </div>
@@ -70,14 +70,14 @@
         <div class="row gy-4">
             <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
                 <p class="who-we-are">Who We Are</p>
-                <h3>Delivering Agile IT Solutions, VeloSwift Your Success</h3>
+                <h3>Why VeloSwift Should be Your Technology Partner </h3>
                 <p class="fst-italic">
-                    At VeloSwifte, we specialize in delivering innovative IT solutions that drive digital transformation. From web and mobile app development to custom websites and game creation, we combine technical expertise with a client-focused approach to bring your vision to life. Our agile processes and commitment to quality ensure fast, reliable results every time.
+                    VeloSwift is a product of BackOffice, a technology company and your strategic ally. Our goal is to elevate your business with next-gen business solutions, unwavering security, and a commitment to your unique needs. Here’s why VeloSwift is the technological partner you need
                 </p>
                 <ul>
-                    <li><i class="bi bi-check-circle"></i> <span>We focus on bringing your vision to life with custom, cutting-edge solutions..</span></li>
-                    <li><i class="bi bi-check-circle"></i> <span>Our streamlined processes ensure fast, reliable delivery without compromising quality.</span></li>
-                    <li><i class="bi bi-check-circle"></i> <span>We specialize in web, mobile app, and game development tailored to your needs.</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>We deliver flexible, cloud-based solutions that adapt seamlessly to any industry’s unique needs.</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Our products integrate advanced features with user-friendly design, ensuring smooth operations and growth.</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>We provide dedicated support and continuous innovation to keep your business ahead of the curve.</span></li>
                 </ul>
                 <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
@@ -107,7 +107,7 @@
 <section id="services" class="services section">
     <div class="container section-title" data-aos="fade-up">
         <h2>Product</h2>
-        <div><span>Check Our</span> <span class="description-title">Product</span></div>
+        <div><span>Check Our</span> <span class="description-title">Products</span></div>
     </div>
     <div class="container">
         <div class="row gy-4">
@@ -115,7 +115,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item  position-relative">
 
-                        <img src="{{asset('images/project/'. $projectData->image )}}" alt="Current Image" style="max-width: 350px;">
+                        <img src="{{asset('images/project/'. $projectData->image )}}" alt="Current Image" style="width: 350px; height: 200px;">
 
                     <a href="service-details.html" class="stretched-link">
                         <h3>{{$projectData->title}}</h3>
@@ -131,8 +131,8 @@
 <!-- Client Section -->
 <section id="features" class="features section light-background">
     <div class="container section-title" data-aos="fade-up">
-        <h2>Client</h2>
-        <div><span>Check Our</span> <span class="description-title">Client</span></div>
+        <h2>Clients</h2>
+        <div><span>Check Our Clients and</span> <span class="description-title">Their Feedbacks</span></div>
     </div>
     <div class="container">
         <div class="row gy-5 justify-content-between">
@@ -160,8 +160,8 @@
 <!-- Pricing Section -->
 <section id="pricing" class="pricing section">
     <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <div><span>Check Our</span> <span class="description-title">Pricing</span></div>
+        <h2>Price Quotes</h2>
+        <div><span>Check Price Quotes</span> <span class="description-title">for You</span></div>
     </div>
     <div class="container">
         <div class="row gy-4">
@@ -241,6 +241,84 @@
             </div><!-- End Pricing Item -->
         </div><!-- End pricing row -->
     </div>
+</section>
+
+<!-- Faq Section -->
+<section id="faq" class="faq section light-background">
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="content px-xl-5">
+                    <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+                    <p>Why VeloSwift Should be Your Technology Partner </p>
+                </div>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="faq-container">
+                    <div class="faq-item faq-active">
+                        <h3><span class="num">1.</span> <span>What is VeloSwift and how can it help my business?</span></h3>
+                        <div class="faq-content">
+                            <p>VeloSwift is an all-in-one destination for powerful SaaS solutions, including ERP, POS, CRM, travel booking, shipping, and more. Our cloud-based tools help businesses run smarter, faster, and more efficiently.</p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+
+                    <div class="faq-item">
+                        <h3><span class="num">2.</span> <span>What makes VeloSwift different from other SaaS solution providers?</span></h3>
+                        <div class="faq-content">
+                            <p>VeloSwift offers an all-in-one suite of powerful, cloud-based tools—like ERP, POS, CRM, travel booking, and more—designed to help your business work smarter, faster, and more efficiently, all under one trusted platform.
+
+                            </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+
+                    <div class="faq-item">
+                        <h3><span class="num">3.</span> <span>Do you provide custom services along with your software products? </span></h3>
+                        <div class="faq-content">
+                            <p>Yes! In addition to our SaaS products, we offer services like Website Design, eCommerce Development, Software Development, Mobile App Development, Monitoring & Maintenance, Software Testing & QA, IT/IS Audit, VA/PT services, and ISO 9001:2015 & ISO 27001:2022 certification support. </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+
+                    <div class="faq-item">
+                        <h3><span class="num">4.</span> <span>Is VeloSwift’s software cloud-based and secure?</span></h3>
+                        <div class="faq-content">
+                            <p>Absolutely. All our solutions are cloud-based, ensuring easy access anytime, anywhere. We prioritize data security and compliance to help you manage sensitive information with confidence. </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+
+                    <div class="faq-item">
+                        <h3><span class="num">5.</span> <span>Do you provide ongoing support and maintenance?</span></h3>
+                        <div class="faq-content">
+                            <p>Yes, we do. VeloSwift offers reliable monitoring, maintenance, software testing, QA, and IT/IS audits to keep your systems running smoothly so you can focus on your business, not the tech headaches.
+                            </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+
+                    <div class="faq-item">
+                        <h3><span class="num">6.</span> <span>How do I get started with VeloSwift?</span></h3>
+                        <div class="faq-content">
+                            <p>Getting started is easy! Contact us for a free consultation, and we’ll guide you to the best solution for your business needs. Our team will help you set up, customize, and maintain your chosen software or service.
+                            </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
 </section>
 
 <!-- Contact Section -->

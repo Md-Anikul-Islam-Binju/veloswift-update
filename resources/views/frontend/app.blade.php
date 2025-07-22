@@ -27,27 +27,23 @@
         <nav id="navmenu" class="navmenu">
             <ul>
                 <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-{{--                <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>--}}
-{{--                    <ul>--}}
-{{--                        <li><a href="#">Dropdown 1</a></li>--}}
-{{--                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>--}}
-{{--                            <ul>--}}
-{{--                                <li><a href="#">Deep Dropdown 1</a></li>--}}
-{{--                                <li><a href="#">Deep Dropdown 2</a></li>--}}
-{{--                                <li><a href="#">Deep Dropdown 3</a></li>--}}
-{{--                                <li><a href="#">Deep Dropdown 4</a></li>--}}
-{{--                                <li><a href="#">Deep Dropdown 5</a></li>--}}
-{{--                            </ul>--}}
-{{--                        </li>--}}
-{{--                        <li><a href="#">Dropdown 2</a></li>--}}
-{{--                        <li><a href="#">Dropdown 3</a></li>--}}
-{{--                        <li><a href="#">Dropdown 4</a></li>--}}
-{{--                    </ul>--}}
-{{--                </li>--}}
+
+                <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a href="#">VeloSwift HRMS</a></li>
+                        <li><a href="#">VeloSwift School</a></li>
+                        <li><a href="#">VeloSwift Hospital</a></li>
+                        <li><a href="#">VeloSwift POS</a></li>
+                        <li><a href="#">VeloSwift Inventory</a></li>
+                        <li><a href="#">VeloSwift Booking</a></li>
+                        <li><a href="#">VeloSwift Shipping</a></li>
+                        <li><a href="#">VeloSwift Audio</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Resource</a></li>
+{{--                <li><a href="#features">Features</a></li>--}}
+{{--                <li><a href="#pricing">Pricing</a></li>--}}
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -66,10 +62,11 @@
             <p>© <span>Copyright</span> <strong class="px-1 sitename">Veloswift</strong> <span>All Rights Reserved</span></p>
         </div>
         <div class="social-links d-flex justify-content-center">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/veloswiftbd"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/veloswift"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/veloswiftbd"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/veloswift"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@veloswiftbd"><i class="bi bi-youtube"></i></a>
         </div>
     </div>
 </footer>

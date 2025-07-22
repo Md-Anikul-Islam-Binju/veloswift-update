@@ -6,8 +6,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Dashboard | Veloswift</title>
-    <link rel="shortcut icon" href="{{$siteSetting->favicon}}">
-    <meta property="og:image" content="{{$siteSetting->site_preview_image}}"/>
+    <link rel="shortcut icon" href="{{$siteSetting->favicon?? null}}">
+    <meta property="og:image" content="{{$siteSetting->site_preview_image?? null}}"/>
     <!-- Select2 css -->
     <link href="{{asset('backend/vendor/select2/css/select2.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- Datatables css -->
@@ -92,10 +92,10 @@
     <div class="leftside-menu">
         <a href="{{route('dashboard')}}" class="logo logo-light">
             <span class="logo-lg">
-                <img src="{{$siteSetting->logo}}" alt="logo" style="height: 50px;">
+                <img src="{{$siteSetting->logo??null}}" alt="logo" style="height: 50px;">
             </span>
             <span class="logo-sm">
-                <img src="{{$siteSetting->logo}}" alt="small logo">
+                <img src="{{$siteSetting->logo??null}}" alt="small logo">
             </span>
         </a>
 
