@@ -10,8 +10,8 @@
                 <h2>{{$slider->title}}</h2>
                 <p>{!! $slider->details !!}</p>
                 <div class="d-flex">
-                    <a href="#about" class="btn-get-started">Get Started</a>
-                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                    <a href="#services" class="btn-get-started">Get Started</a>
+{{--                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>--}}
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2">
@@ -20,48 +20,128 @@
         </div>
     </div>
 
+
+
     <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
         <div class="container position-relative">
             <div class="row gy-4 mt-5">
 
+                <!-- Service 1 -->
                 <div class="col-xl-3 col-md-6">
-                    <div class="icon-box">
+                    <div class="icon-box" data-bs-toggle="modal" data-bs-target="#modalSoftware">
                         <div class="icon">
                             <i class="bi bi-briefcase"></i>
                         </div>
-                        <h4 class="title"><a href="" class="stretched-link">Software Development</a></h4>
+                        <h4 class="title"><a href="javascript:void(0);" class="stretched-link">Software Development</a></h4>
                     </div>
                 </div>
 
+                <!-- Service 2 -->
                 <div class="col-xl-3 col-md-6">
-                    <div class="icon-box">
+                    <div class="icon-box" data-bs-toggle="modal" data-bs-target="#modalWebsite">
                         <div class="icon">
                             <i class="bi bi-laptop"></i>
                         </div>
-                        <h4 class="title"><a href="" class="stretched-link">Web Application</a></h4>
+                        <h4 class="title"><a href="javascript:void(0);" class="stretched-link">Website Development</a></h4>
                     </div>
                 </div>
 
+                <!-- Service 3 -->
                 <div class="col-xl-3 col-md-6">
-                    <div class="icon-box">
+                    <div class="icon-box" data-bs-toggle="modal" data-bs-target="#modalMobile">
                         <div class="icon">
                             <i class="bi bi-phone"></i>
                         </div>
-                        <h4 class="title"><a href="" class="stretched-link">Mobile Application</a></h4>
+                        <h4 class="title"><a href="javascript:void(0);" class="stretched-link">Mobile App Development</a></h4>
                     </div>
                 </div>
 
+                <!-- Service 4 -->
                 <div class="col-xl-3 col-md-6">
-                    <div class="icon-box">
+                    <div class="icon-box" data-bs-toggle="modal" data-bs-target="#modalTesting">
                         <div class="icon">
                             <i class="bi bi-cloud"></i>
                         </div>
-                        <h4 class="title"><a href="" class="stretched-link">Cloud Solutions</a></h4>
+                        <h4 class="title"><a href="javascript:void(0);" class="stretched-link">Testing & Maintenance</a></h4>
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal: Software Development -->
+    <div class="modal fade" id="modalSoftware" tabindex="-1" aria-labelledby="modalSoftwareLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSoftwareLabel">Software Development</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    VeloSwift offers custom software and SaaS product development tailored to your business needs. We build scalable, secure, and reliable solutions designed to grow with you. From planning to delivery, we ensure on-time project completion at an affordable cost—empowering your business with the right technology.
+                </div>
+                <div class="modal-footer">
+                    <a href="{{ route('contact') }}" class="btn btn-primary">Contact Us</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal: Website Development -->
+    <div class="modal fade" id="modalWebsite" tabindex="-1" aria-labelledby="modalWebsiteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWebsiteLabel">Website Development</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    We craft modern, creative websites using the latest tech frameworks to ensure a stunning, responsive user experience. Our eCommerce development includes advanced technology and API integration for smooth connectivity with both external and internal systems—boosting performance, automation, and business growth..
+                </div>
+                <div class="modal-footer">
+                    <a href="{{ route('contact') }}" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Mobile App Development -->
+    <div class="modal fade" id="modalMobile" tabindex="-1" aria-labelledby="modalMobileLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMobileLabel">Mobile App Development</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    VeloSwift provides cutting-edge mobile app development tailored to your needs. We build high-quality Android and iOS apps with modern UI, smooth performance, and scalable features—delivering a seamless user experience that evolves with your business.
+                </div>
+                <div class="modal-footer">
+                    <a href="{{ route('contact') }}" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Testing & Maintenance -->
+    <div class="modal fade" id="modalTesting" tabindex="-1" aria-labelledby="modalTestingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTestingLabel">Testing & Maintenance</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    VeloSwift offers website and software testing services, including QA, to ensure your solutions are bug-free, reliable, and performance-optimized. Our expert team provides continuous monitoring and maintenance to keep your systems running smoothly and efficiently..
+                </div>
+                <div class="modal-footer">
+                    <a href="{{ route('contact') }}" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 
 <!-- About Section -->
@@ -79,7 +159,7 @@
                     <li><i class="bi bi-check-circle"></i> <span>Our products integrate advanced features with user-friendly design, ensuring smooth operations and growth.</span></li>
                     <li><i class="bi bi-check-circle"></i> <span>We provide dedicated support and continuous innovation to keep your business ahead of the curve.</span></li>
                 </ul>
-                <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="{{route('about')}}" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
 
             <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
@@ -117,7 +197,7 @@
 
                         <img src="{{asset('images/project/'. $projectData->image )}}" alt="Current Image" style="width: 350px; height: 200px;">
 
-                    <a href="service-details.html" class="stretched-link">
+                    <a href="{{route('project.details',$projectData->id)}}" class="stretched-link">
                         <h3>{{$projectData->title}}</h3>
                     </a>
                     <p>{{ strip_tags($projectData->details) }}</p>
@@ -145,8 +225,11 @@
                     @foreach($client as $clientData)
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
                         <div class="feature-box d-flex align-items-center ">
-                            <img class="me-3" src="{{asset('images/client/'. $clientData->logo )}}" style="height: 80px; width: 80px;" alt="">
-                            <h3>{{$clientData->name}}</h3>
+                            <a href="{{$clientData->link}}" target="_blank">
+                                <img class="me-3" src="{{asset('images/client/'. $clientData->logo )}}" style="height: 80px; width: 80px;" alt="">
+                                <h3>{{$clientData->name}}</h3>
+                            </a>
+
                         </div>
                     </div>
                     @endforeach
@@ -334,14 +417,15 @@
                     <i class="bi bi-geo-alt flex-shrink-0"></i>
                     <div>
                         <h3>Address</h3>
-                        <p>Dhaka, Bangladesh</p>
+                        <p>House 545/A, Road 11, Adabor, Dhaka 1207</p>
                     </div>
                 </div><!-- End Info Item -->
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                     <i class="bi bi-telephone flex-shrink-0"></i>
                     <div>
                         <h3>Call Us</h3>
-                        <p>+8801905256528</p>
+                        <p>+8801713738396
+                        </p>
                     </div>
                 </div><!-- End Info Item -->
 
@@ -349,7 +433,7 @@
                     <i class="bi bi-envelope flex-shrink-0"></i>
                     <div>
                         <h3>Email Us</h3>
-                        <p>info@veloswift.net/</p>
+                        <p>business@veloswift.net</p>
                     </div>
                 </div><!-- End Info Item -->
             </div>

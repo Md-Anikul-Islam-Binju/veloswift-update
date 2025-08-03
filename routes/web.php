@@ -11,6 +11,7 @@ use App\Http\Controllers\admin\TeamController;
 use App\Http\Controllers\admin\TechnologyController;
 use App\Http\Controllers\ContactPageController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProjectShowController;
 use App\Http\Controllers\ServicePageController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,6 +31,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [AboutPageController::class, 'about'])->name('about');
 Route::get('/contact', [ContactPageController::class, 'contact'])->name('contact');
 Route::get('/service', [ServicePageController::class, 'service'])->name('service');
+Route::get('/project-details/{id}', [ProjectShowController::class, 'project'])->name('project.details');
 
 //Admin
 Route::middleware('auth')->group(callback: function () {

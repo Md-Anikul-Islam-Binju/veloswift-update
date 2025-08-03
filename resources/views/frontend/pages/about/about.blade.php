@@ -1,46 +1,40 @@
 @extends('frontend.app')
 @section('home_content')
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-4">
-            <h1 class="display-3 text-white  mb-3 animated slideInDown">About</h1>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
+    <section id="about" class="about section">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex flex-column">
-                        <img class="img-fluid w-75 align-self-end" src="{{asset('frontend/img/about.png')}}" alt="">
-                        <div class="w-50 bg-secondary p-5" style="margin-top: -25%;">
-                            <h1 class=" text-primary mb-3">4 + Years</h1>
-                            <h2 class=" mb-0">Experience</h2>
-                        </div>
-                    </div>
+            <div class="row gy-4">
+                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                    <p class="who-we-are">Who We Are</p>
+                    <h3>Why VeloSwift Should be Your Technology Partner </h3>
+                    <p class="fst-italic">
+                        VeloSwift is a product of BackOffice, a technology company and your strategic ally. Our goal is to elevate your business with next-gen business solutions, unwavering security, and a commitment to your unique needs. Here’s why VeloSwift is the technological partner you need
+                    </p>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> <span>We deliver flexible, cloud-based solutions that adapt seamlessly to any industry’s unique needs.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Our products integrate advanced features with user-friendly design, ensuring smooth operations and growth.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>We provide dedicated support and continuous innovation to keep your business ahead of the curve.</span></li>
+                    </ul>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="d-inline-block bg-secondary text-primary py-1 px-4">About Us</p>
-                    <h1 class=" mb-4">Who We Are?</h1>
-                    <p>Welcome to 13space, a cutting-edge software company on a mission to revolutionize digital solutions. At 13space, we take pride in being a dynamic team of skilled software engineers committed to delivering exceptional web, desktop, and mobile applications tailored to our clients' unique needs.</p>
-                    <p class="mb-4">Since our establishment, we've been at the forefront of innovation, partnering with a diverse range of companies and driving operational excellence for startups, emerging businesses, and established organizations, both locally and in the global freelance market.</p>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <h3 class=" mb-3">Since 2021</h3>
-                            <p class="mb-0">At 13space, we don't just build software; we cultivate partnerships and help businesses thrive.</p>
+
+                <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+                    <div class="row gy-4">
+                        <div class="col-lg-6">
+                            <img src="{{URL::to('frontend/assets/img/about-company-1.jpg')}}" class="img-fluid" alt="">
                         </div>
-                        <div class="col-md-6">
-                            <h3 class=" mb-3">100+ clients</h3>
-                            <p class="mb-0">Our dedicated teams evolve with our clients, providing end-to-end solutions for you.</p>
+                        <div class="col-lg-6">
+                            <div class="row gy-4">
+                                <div class="col-lg-12">
+                                    <img src="{{URL::to('frontend/assets/img/about-company-2.jpg')}}" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-12">
+                                    <img src="{{URL::to('frontend/assets/img/about-company-3.jpg')}}" class="img-fluid" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- About End -->
+    </section>
 @endsection
